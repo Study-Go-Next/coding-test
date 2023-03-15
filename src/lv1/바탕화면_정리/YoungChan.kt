@@ -27,12 +27,11 @@ fun solution(wallpaper: Array<String>): IntArray {
     var luy = 50
     var rdx = 0
     var rdy = 0
-    val exist = '#'
 
     for(y in wallpaper.indices) {
         val s = wallpaper[y]
         for(x in s.indices) {
-            if(s[x] == exist) {
+            if(s[x] == '#') {
                 if(x < lux) lux = x
                 if(y < luy) luy = y
                 if(x+1 > rdx) rdx = x+1
